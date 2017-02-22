@@ -79,7 +79,7 @@ router.get("/dashboardPage.html",function(req,res){
 
 
 
-router.post('/data',pause(10000), function(req,res){
+router.post('/data',pause(3000), function(req,res){
     res.sendFile("/json/data.json",{ root: 'views' });
     //
 	/*res.json([{"id": 1, "name": "Mymm", "city": "Pantano do Sul"},
